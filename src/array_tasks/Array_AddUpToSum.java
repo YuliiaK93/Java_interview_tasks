@@ -19,7 +19,7 @@ public class Array_AddUpToSum {
 
         int[] arr = {8, 7, 2, 5, 3, 1};
         int sum = 10;
-        
+
 
         Map<Integer, Integer> pairs = new HashMap<>();
 
@@ -27,6 +27,7 @@ public class Array_AddUpToSum {
             for (int j = i+1; j < arr.length; j++) {
                 if(arr[i] + arr[j] == sum){
                     pairs.put(arr[i], arr[j]);
+                    pairs.get(arr[i]+ arr[j]);
                 }
             }
         }
